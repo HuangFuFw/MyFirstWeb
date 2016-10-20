@@ -69,20 +69,37 @@ table {
     width: 30%;
 }
 .col-2-3 {
-    width: 63%;
+    width: 60%;
 }
-
-.col-1-3,
-.col-2-3{
+.col-2-3,
+.col-1-3{
     display: inline-block;
     vertical-align: top;
 }
 .grid,
-.col-1-3,
-.col-2-3{
+.col-1-3{
     padding-left: 10px;
     padding-right: 10px;
 }
+
+.row,
+.row-alt{
+    min-width: 960px;
+}
+
+.row{
+    background: #ffffff;
+    padding: 66px 0 44px 0;
+}
+
+.row-alt{
+    background: #cbe2c1;
+    background: -webkit-linear-gradient(to right,#a1d3b0, #f6f1d3);
+    background: -moz-linear-gradient(to right, #a1d3b0, #f6f1d3);
+    background: linear-gradient(to right, #a1d3b0, #f6f1d3);
+    padding: 44px 0 22px 0;
+}
+
 
 /*
   ========================================
@@ -110,10 +127,19 @@ table {
     border-radius: 5px;
     display: inline-block;
     margin: 0;
+    cursor: pointer;
+    color: #ffffff;
+    font-weight: 400;
+    letter-spacing: .5px;
+    text-transform: uppercase;
 }
 .btn-alt{
     border: 2px solid #dfe2e5;
-    padding: 10px 10px;
+    padding: 10px 30px;
+}
+.btn:hover{
+    color: #648880;
+    background: #ffffff;
 }
 
 /*
@@ -136,6 +162,14 @@ table {
     text-align: right;
     margin:66px 0 22px 0;
 }
+.primary-header a,
+.primary-footer a {
+    color: #fff;
+}
+.primary-header a:hover,
+.primary-footer a:hover {
+    color: #648880;
+}
 
 /*
   ========================================
@@ -152,7 +186,11 @@ table {
     float: left;
     font-weight: 400;
 }
-
+/*
+  ========================================
+  nav
+  ========================================
+*/
 .nav{
     text-align: right;
 }
@@ -162,13 +200,24 @@ table {
     letter-spacing: .5px;
     text-transform:uppercase;
 }
+
+.nav li{
+    display: inline-block;
+    margin: 0 10px;
+    vertical-align: top;
+}
+.nav li:last-child{
+    margin-right: 0;
+}
+
 a {
-    color: #648880;
+    color: #ffffff;
     text-decoration: none;
 }
-a:hover h3{
+.teaser a:hover h3{
     color: #a9b2b9;
 }
+
 /*p a {*/
     /*border-bottom: 1px solid #dfe2e5;*/
 /*}*/
@@ -181,11 +230,37 @@ a:hover h3{
     text-align: center;
 }
 .hero h2{
-    font-size: 24px;
+    font-size: 36px;
 }
 .hero p{
-    font-size: 18px;
+    font-size: 24px;
+    font-weight: 100;
+    color: #ffffff;
 }
+
+
+.lead{
+    text-align: center;
+}
+.lead p{
+    font-size: 21px;
+    line-height: 33px;
+}
+
+.speaker-info {
+    border: 1px solid #dfe2e5;
+    border-radius: 5px;
+    margin-top: 88px;
+    padding: 22px 0;
+    text-align: center;
+}
+.speaker-info a{
+    color: #293f50;
+
+}
+
+
+
 
 h1, h3, h4, h5, p {
     margin-bottom: 22px;
@@ -217,6 +292,7 @@ h5 {
 
 
 body {
+    background: #293f50;
     color: #888;
     font: 300 16px/22px  "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
