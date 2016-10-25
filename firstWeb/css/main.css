@@ -314,6 +314,27 @@ h5 {
     margin:  -80px 0 22px 0;
 }
 
+/*
+  ========================================
+  venue
+  ========================================
+*/
+.venue-theatre{
+    margin-bottom: 66px;
+
+}
+.venue-hotel{
+    margin-bottom: 22px;
+}
+
+.venue-theatre a{
+    color: #314b60;
+}
+
+.venue-map {
+    height: 264px;
+}
+
 /*strong {*/
     /*font-weight: 400;*/
 /*}*/
