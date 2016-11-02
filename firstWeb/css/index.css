@@ -6,7 +6,7 @@ body {
     font: bold 11px "Helvetica Neue", Helvetica, Arial, sans-serif;
     padding: 0px;
     background: #fff000;
-    margin: 0px;
+    margin: 20px 0;
     text-transform: uppercase;
 }
 
@@ -46,16 +46,17 @@ img{
     width: 200px;
     /*height:200px;*/
 }
-/**,*/
-/**:before,*/
-/**:after {*/
-    /*box-sizing: border-box;*/
-/*}*/
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
 
 form{
     border: 1px solid #c6c7cc;
     border-radius: 5px;
     width: 240px;
+    overflow: hidden;
     font:14px "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 fieldset{
@@ -79,17 +80,115 @@ input{
     margin-bottom: 20px;
 }
 
+.account-info input{
+    padding: 6px;
+    border: 1px solid #c6c7cc;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .1);
+    color: #636466;
+    padding: 6px;
+    margin-top:6px;
+    width: 100%;
 
-.footer{
-    border-top: 1px solid #c6c7cc;
-    border-radius: 0 0 5px 5px;
-    background: #dfe2e5;
-    margin: 22px 0 0 0;
-    vertical-align: bottom;
 }
 
-.btn{
-    background: #395870;
-    color: #fff;
+.account-action{
+    border-top: 1px solid #c6c7cc;
+    background: #f0f0f2;
+    padding: 20px;
+}
+
+.account-action .btn{
+    border: 0;
+    background: #314b60;
+    color: #ffffff;
+    font-weight: bold;
+    margin-right: 10px;
+    height: 100%;
+    cursor: pointer;
+    padding: 8px 16px;
+}
+.account-action label{
+
+}
+
+table{
+    border-collapse:separate;
+    border-spacing: 0;
+    color: #4a4a4d;
+    font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+/*table,*/
+th{
+    font-weight: bold;
+    background: #314b60;
+    color: #ffffff;
+}
+
+th,td{
+    padding: 10px 15px;
+    vertical-align: middle;
+}
+
+th:first-child{
+    text-align: left;
+}
+
+tbody tr:nth-child(even){
+    background: #f0f0f2;
+}
+
+td{
+    border-bottom: 1px solid #cecfd5;
+    border-right: 1px solid  #cecfd5;
+}
+td:first-child{
+    border-left: 1px solid #cecfd5;
+}
+
+/*tbody tr td:first-line{*/
+    /*color: #314b60;*/
+/*}*/
+
+th:first-child{
+    border-top-left-radius: 5px;
+}
+th:last-child{
+    border-top-right-radius: 5px;
+}
+tfoot tr:last-child td:first-child{
+    border-bottom-left-radius: 5px;
+}
+tfoot tr:last-child td:last-child{
+    border-bottom-right-radius: 5px;
+}
+.item-stock{
+    text-align:center;
+
+}
+
+.item-price{
+    text-align: right;
+}
+
+
+p,
+tfoot tr{
+    color: #636466;
+    font-size: 10px;
+}
+
+.item-multiple {
+    display: block;
+}
+/*tbody tr:*/
+tfoot{
+    text-align: right;
+}
+tfoot tr:last-child td{
+    background: #f0f0f2;
+    color: #395870;
     font-weight: bold;
 }
+
+
+
